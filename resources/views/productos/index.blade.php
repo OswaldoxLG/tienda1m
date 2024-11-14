@@ -1,23 +1,21 @@
 @extends('layouts.app')
-
-@section('title', 'Lista de productos')
-
+@section('title', 'Productos')
 @section('content')
 
 <h1>Productos</h1>
 <div class="text-end">
-    <a href="{{ route('product.create') }}" class="btn btn-success">Crear</a>
+    <a href="{{ route('product.create') }}" class="btn btn-warning">CREAR</a>
 </div>
 <br>
 <table class="table table-striped">
     <thead>
         <tr>
         <th scope="col">ID</th>
-        <th scope="col">NOMBRE</th>
-        <th scope="col">DESCRIPCION</th>
-        <th scope="col">PRECIO</th>
-        <th scope="col">STOCK</th>
-        <th scope="col">CATEGORIA</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Categoria</th>
         <th scope="col"></th>
         <th scope="col"></th>
         </tr>

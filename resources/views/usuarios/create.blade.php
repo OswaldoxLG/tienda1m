@@ -18,7 +18,7 @@
     <h1>Crear usaurios</h1>
 
     <form action="{{ route('user.store') }}" method="POST">
-        {{ csrf_field() }}
+        @csrf
         <div>
             <label for="name" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="nombre">
@@ -42,8 +42,7 @@
         </select>
         </div>
         <br>
-        <button type="submit">ENVIAR</button>
-        <a href="{{ route('user.index') }}">Regresar</a>
+        <button type="submit">Envio</button>
     </form>
 </div>
 @endsection

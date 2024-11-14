@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'crear producto')
-
 @section('content')
 
 <div class="container">
@@ -18,7 +16,7 @@
     <h1>Crear productos</h1>
 
     <form action="{{ route('product.store') }}" method="POST">
-        {{ csrf_field() }}
+        @csrf
         <div>
             <label for="name" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="nombre">
@@ -44,8 +42,7 @@
             <input type="text" class="form-control" name="category" id="category" placeholder="Categoria">
         </div>
         <br>
-        <button type="submit" >ENVIAR</button>
-        <a href="{{ route('product.index') }}">Regresar</a>
+        <button type="submit" >Envio</button>
     </form>
 </div>
 @endsection

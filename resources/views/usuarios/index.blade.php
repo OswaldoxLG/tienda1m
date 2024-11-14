@@ -1,21 +1,19 @@
 @extends('layouts.app')
-
-@section('title', 'Lista de usuarios')
-
+@section('title', 'Usuarios')
 @section('content')
-@include('sweetalert::alert')
+
 <h1>Usuarios</h1>
 <div class="text-end">
-    <a href="{{ route('user.create') }}" class="btn btn-success">Crear</a>
+    <a href="{{ route('user.create') }}" class="btn btn-warning">CREAR</a>
 </div>
 <br>
 <table class="table table-striped">
     <thead>
         <tr>
         <th scope="col">ID</th>
-        <th scope="col">NOMBRE</th>
-        <th scope="col">CORREO</th>
-        <th scope="col">ROL</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Correo</th>
+        <th scope="col">Rol</th>
         <th scope="col"></th>
         <th scope="col"></th>
         </tr>
